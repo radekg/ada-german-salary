@@ -1,0 +1,15 @@
+
+with "default";
+with "aunit";
+
+project Default.Tests is
+
+   for Languages use ("ada");
+   for Object_Dir use "tests/obj";
+   for Exec_Dir use "tests/bin";
+
+   for Main use ("cli-tests-harness.adb");
+
+   for Source_Dirs use ("tests/src");
+
+end Default.Tests;
